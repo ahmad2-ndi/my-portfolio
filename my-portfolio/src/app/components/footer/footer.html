@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h2 class="footer-logo"><span class="text-gradient">Portfolio.</span></h2>
+        <p class="footer-tagline">Building the future of the web, one pixel at a time.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a *ngFor="let link of socialLinks" [href]="link.url" target="_blank" class="social-link">
+          {{ link.name }}
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">&copy; {{ currentYear }} Personal Portfolio. All rights reserved.</p>
+      <div class="footer-meta">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>

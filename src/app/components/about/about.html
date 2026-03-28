@@ -1,0 +1,37 @@
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Image/Visual Column -->
+      <div class="about-visual">
+        <div class="visual-container glass-card">
+          <div class="glass-overlay"></div>
+          <div class="about-decoration"></div>
+          <div class="about-image-placeholder">
+            <span class="text-gradient">3D ARTIST & <br/> DEVELOPER</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Content Column -->
+      <div class="about-content">
+        <h2 class="section-title">I'm <span class="text-gradient">Muhammad Ahmad</span></h2>
+        <p class="about-text">
+          I'm a creative developer specialized in building immersive 3D experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality.
+        </p>
+        <p class="about-text">
+          My goal is to create digital products that don't just work, but inspire. I believe the future of the web is interactive, three-dimensional, and deeply engaging.
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-item" *ngFor="let stat of stats">
+            <h3 class="stat-value text-gradient">{{ stat.value }}</h3>
+            <p class="stat-label">{{ stat.label }}</p>
+          </div>
+        </div>
+
+        <button class="btn-premium">Download CV</button>
+      </div>
+    </div>
+  </div>
+</section>

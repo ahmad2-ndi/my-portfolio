@@ -1,0 +1,26 @@
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title text-center">Featured <span class="text-gradient">Projects</span></h2>
+      <p class="section-subtitle text-center">A showcase of selected works exploring 3D, UI/UX, and creative coding.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card glass-card" *ngFor="let project of projects">
+        <div class="project-image">
+          <img [src]="project.image" [alt]="project.title" loading="lazy" />
+          <div class="project-overlay">
+            <a [href]="project.link" class="view-project-btn">
+              View Project
+              <span class="material-icons">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-category">{{ project.category }}</span>
+          <h3 class="project-title">{{ project.title }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
